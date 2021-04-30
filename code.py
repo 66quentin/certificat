@@ -21,7 +21,8 @@ except ImportError:
 		subprocess.check_call(["sudo","apt", "update"])
 		subprocess.check_call(["sudo","apt", "install", "python3-pip"])
 	subprocess.check_call([sys.executable, "-m", "pip", "install", "pyOpenSSL"])
-	from OpenSSL import crypto, SSL
+	print("Veuillez éxecuter le programme à nouveau")
+	exit(0)
 
 
 #Cryptodome pour RSA et DSA
