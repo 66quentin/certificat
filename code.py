@@ -14,9 +14,15 @@ import os
 try:
 	from OpenSSL import crypto, SSL
 except ImportError:
-	subprocess.check_call([sys.executable, "-m", "pip", "install", "openssl-python"])
-	print("Erreur avec la libraire OpenSSL. Essayer:\nsudo apt-get install libssl-dev libffi-dev");
-	exit(0)
+	try:
+		subprocess.check_call([sys.executable, "-m", "pip", "install", "openssl-python"])
+	except:
+		subprocess.check_call(["sudo","add-apt-repository", "universe"])
+			subprocess.check_call(["sudo","apt", "update"])
+			subprocess.check_call(["sudo","apt", "install", "python3-pip"])
+	
+	#print("Erreur avec la libraire OpenSSL. Essayer:\nsudo apt-get install libssl-dev libffi-dev");
+
 
 #Cryptodome pour RSA et DSA
 try:
@@ -27,7 +33,6 @@ try:
 except ImportError:
 	subprocess.check_call([sys.executable, "-m", "pip", "install", "-U", "pycryptodome"])
 	print("Erreur avec la libraire PyCryptodome. Essayer:\npip3 uninstall PyCrypto");
-	exit(0)
 
 
 #Pour éviter des erreurs, on s'assure que certaines entrées soient non-vides
