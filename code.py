@@ -10,7 +10,7 @@ import os
 
 
 #Import des bibliothèques non-standards
-#OpenSSL
+#OpenSSL et pip
 try:
 	from OpenSSL import crypto, SSL
 except ImportError:
