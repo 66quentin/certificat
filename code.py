@@ -20,8 +20,7 @@ except ImportError:
 		subprocess.check_call(["sudo","add-apt-repository", "universe"])
 		subprocess.check_call(["sudo","apt", "update"])
 		subprocess.check_call(["sudo","apt", "install", "python3-pip"])
-	
-	#print("Erreur avec la libraire OpenSSL. Essayer:\nsudo apt-get install libssl-dev libffi-dev");
+	from OpenSSL import crypto, SSL
 
 
 #Cryptodome pour RSA et DSA
@@ -32,7 +31,7 @@ try:
 		subprocess.check_call([sys.executable, "-m", "pip", "install", "-U", "pycryptodome"])
 except ImportError:
 	subprocess.check_call([sys.executable, "-m", "pip", "install", "-U", "pycryptodome"])
-	print("Erreur avec la libraire PyCryptodome. Essayer:\npip3 uninstall PyCrypto");
+	from Crypto.PublicKey import RSA,DSA
 
 
 #Pour éviter des erreurs, on s'assure que certaines entrées soient non-vides
