@@ -18,8 +18,8 @@ except ImportError:
 		subprocess.check_call([sys.executable, "-m", "pip", "install", "openssl-python"])
 	except:
 		subprocess.check_call(["sudo","add-apt-repository", "universe"])
-			subprocess.check_call(["sudo","apt", "update"])
-			subprocess.check_call(["sudo","apt", "install", "python3-pip"])
+		subprocess.check_call(["sudo","apt", "update"])
+		subprocess.check_call(["sudo","apt", "install", "python3-pip"])
 	
 	#print("Erreur avec la libraire OpenSSL. Essayer:\nsudo apt-get install libssl-dev libffi-dev");
 
