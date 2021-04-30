@@ -15,11 +15,12 @@ try:
 	from OpenSSL import crypto, SSL
 except ImportError:
 	try:
-		subprocess.check_call([sys.executable, "-m", "pip", "install", "openssl-python"])
+		subprocess.check_call([sys.executable, "-m", "pip", "install", "pyOpenSSL"])
 	except:
 		subprocess.check_call(["sudo","add-apt-repository", "universe"])
 		subprocess.check_call(["sudo","apt", "update"])
 		subprocess.check_call(["sudo","apt", "install", "python3-pip"])
+	subprocess.check_call([sys.executable, "-m", "pip", "install", "pyOpenSSL"])
 	from OpenSSL import crypto, SSL
 
 
