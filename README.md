@@ -252,8 +252,8 @@ Avec un peu plus de temps et de liberté, il aurait également été intéressan
 
 **Références**
 
-- crypto - Generic cryptographic module, htt[ps://pypi.org/project/pyOpenSSL/](https://pypi.org/project/pyOpenSSL/)
+- crypto - Generic cryptographic module, [https://pypi.org/project/pyOpenSSL/](https://pypi.org/project/pyOpenSSL/)
 - Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile, [https://tools.ietf.org/html/rfc5280 ](https://tools.ietf.org/html/rfc5280)
 - Internet X.509 Public Key Infrastructure Certificate and CRL Profile,  [https://tools.ietf.org/html/rfc2459 ](https://tools.ietf.org/html/rfc2459)
-- openssl(1) – Linux manpage, htt[ps://linux.die.net/man/1/openssl](https://linux.die.net/man/1/openssl)
-- Welcome to PyCryptodome’s documentation, http[s://pycryptodome.readthedocs.io/ en/latest/ ](https://pycryptodome.readthedocs.io/en/latest/)
+- openssl(1) – Linux manpage, [https://linux.die.net/man/1/openssl](https://linux.die.net/man/1/openssl)
+- Welcome to PyCryptodome’s documentation, [https://pycryptodome.readthedocs.io/ en/latest/ ](https://pycryptodome.readthedocs.io/en/latest/)
