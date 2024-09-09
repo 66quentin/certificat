@@ -2,7 +2,7 @@
 
 **pyOpenSSL**
 
-Projet réalisé par Quentin GUARDIA, qguardia66@gmail.com 
+Projet réalisé par Quentin GUARDIA, quentin.guardia@protonmail.com 
 
 **Introduction**
 
